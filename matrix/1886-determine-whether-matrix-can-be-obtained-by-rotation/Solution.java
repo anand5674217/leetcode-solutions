@@ -1,109 +1,64 @@
-class Solution {
+class DetermineWhetherMatrixCanBeObtainedByRotationSolution {
     public boolean findRotation(int[][] mat, int[][] tar) {
+        int n = mat.length;
+        int m = mat[0].length;
 
-
-        int n=mat.length;
-        int m=mat[0].length;
-
-        int cnt1=0,tar1=0;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-
-                if(mat[i][j]==1){
+        int cnt1 = 0;
+        int tar1 = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (mat[i][j] == 1) {
                     cnt1++;
                 }
-                if(tar[i][j]==1){
+                if (tar[i][j] == 1) {
                     tar1++;
                 }
             }
         }
 
-        if(tar1!=cnt1){
+        if (tar1 != cnt1) {
             return false;
         }
-        // check 0 rotation
-        boolean nomatch = false;
+
+        boolean noMatch = false;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (mat[i][j] != tar[i][j]) {
-                    nomatch = true;
+                    noMatch = true;
                     break;
                 }
             }
         }
-        if (!nomatch) {
+        if (!noMatch) {
             return true;
         }
 
-
-        //1st turn
-        int ra1[][]= new int[n][m];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                ra1[i][j]=mat[j][n-i-1];
-            }
-        }
-        nomatch=false;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-
-                if(ra1[i][j]!=tar[i][j]){
-                    nomatch=true;
-                    break;
+        int[][] rotated = new int[n][m];
+        for (int turn = 0; turn < 3; turn++) {
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    rotated[i][j] = mat[j][n - i - 1];
                 }
-
             }
-        }
 
-        if(!nomatch){
-            return true;
-        }
-        mat=ra1;
-        ra1= new int[n][m];
-        nomatch=false;
-        //rotateagain
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                ra1[i][j]=mat[j][n-i-1];
-            }
-        }
-        nomatch=false;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-
-                if(ra1[i][j]!=tar[i][j]){
-                    nomatch=true;
-                    break;
+            noMatch = false;
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (rotated[i][j] != tar[i][j]) {
+                        noMatch = true;
+                        break;
+                    }
                 }
-
             }
-        }
-        if(!nomatch){
-            return true;
-        }
-        mat=ra1;ra1= new int[n][m];
-        nomatch=false;
-        //rotateagain
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                ra1[i][j]=mat[j][n-i-1];
+
+            if (!noMatch) {
+                return true;
             }
-        }
-        nomatch=false;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
 
-                if(ra1[i][j]!=tar[i][j]){
-                    nomatch=true;
-                    break;
-                }
-
-            }
+            mat = rotated;
+            rotated = new int[n][m];
         }
 
-        if(!nomatch){
-            return true;
-        }
         return false;
     }
 }

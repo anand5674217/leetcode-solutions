@@ -1,40 +1,36 @@
-package com.anand.leetcode-solutions;
+import java.util.LinkedHashMap;
 
-public class LRUCache {
+class LRUCacheInitialTry {
+    private final int capacity;
+    private final LinkedHashMap<Integer, Integer> map;
 
-    Queue<KVPair> queue;
-    public LRUCache(int capacity) {
-        queue= new LinkedList(capacity);
+    public LRUCacheInitialTry(int capacity) {
+        this.capacity = capacity;
+        this.map = new LinkedHashMap<>(capacity, 0.75f, true);
     }
 
     public int get(int key) {
-      while(!queue.isEmpty()){
-
-          KVPair pair=queue.poll();
-
-
-      }
+        return map.getOrDefault(key, -1);
     }
 
     public void put(int key, int value) {
-
-        queue.put(new KVPair(key,value));
-    }
-
-    class KVPair{
-        int key;
-        int value;
-
-        public KVPair(int key,int value){
-            this.key=key;
-            this.value=value;
+        map.put(key, value);
+        if (map.size() > capacity) {
+            Integer eldestKey = map.entrySet().iterator().next().getKey();
+            map.remove(eldestKey);
         }
     }
-}
 
-/**
- * Your LRUCache object will be instantiated and called as such:
- * LRUCache obj = new LRUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */
+    public static void main(String[] args) {
+        LRUCacheInitialTry cache = new LRUCacheInitialTry(2);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        System.out.println(cache.get(1));
+        cache.put(3, 3);
+        System.out.println(cache.get(2));
+        cache.put(4, 4);
+        System.out.println(cache.get(1));
+        System.out.println(cache.get(3));
+        System.out.println(cache.get(4));
+    }
+}
