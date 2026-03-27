@@ -1,3 +1,5 @@
+import java.util.PriorityQueue;
+
 public class MaximumProductSubarraySolution {
 
     public int maxProduct(int[] nums) {
@@ -33,5 +35,20 @@ public class MaximumProductSubarraySolution {
         }
         return max;
 
+    }
+
+    public int kthLargestElement(int[] nums, int k) {
+
+        PriorityQueue<Integer> p= new PriorityQueue<>((a,b)->
+            Integer.compare(b, a)
+        );
+        for (int i = 0; i < nums.length; i++) {
+            p.add(nums[i]);
+        }
+
+        while(k-->1){
+            p.poll();
+        }
+        return (int)p.peek();
     }
 }
