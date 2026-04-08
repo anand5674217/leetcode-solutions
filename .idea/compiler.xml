@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="linked-list-experiments" />
         <module name="determine-whether-matrix-can-be-obtained-by-rotation" />
+        <module name="maximum-non-negative-product-in-a-matrix" />
         <module name="arrays" />
         <module name="binary-search" />
+        <module name="meeting-rooms" />
+        <module name="55-jump-game" />
         <module name="weekly-contest-494-q1" />
-        <module name="maximum-non-negative-product-in-a-matrix" />
       </profile>
     </annotationProcessing>
   </component>
