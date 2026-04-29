@@ -11,4 +11,4 @@ Then rebuild only the vowel positions in the string using that order.
 
 ## Complexity
 - Time: `O(n)`
-- Space: `O(n)`
+- Space: `O(1)`

@@ -1,96 +1,67 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.Arrays;
 
 class Solution {
     public String sortVowels(String s) {
-        int n = s.length();
-        String glanvoture = s;
+        char[] chars = s.toCharArray();
 
-        int[] frequency = new int[5];
-        int[] firstPosition = new int[5];
-        for (int i = 0; i < 5; i++) {
-            firstPosition[i] = -1;
-        }
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        int[] freq = new int[5];
+        int[] first = new int[5];
 
-        char[] chars = glanvoture.toCharArray();
-        List<Integer> vowelPositions = new ArrayList<>();
+        Arrays.fill(first, -1);
 
-        for (int i = 0; i < n; i++) {
-            int vowelIndex = getVowelIndex(chars[i]);
-            if (vowelIndex != -1) {
-                vowelPositions.add(i);
-                frequency[vowelIndex]++;
-                if (firstPosition[vowelIndex] == -1) {
-                    firstPosition[vowelIndex] = i;
+        for (int i = 0; i < chars.length; i++) {
+            int idx = vowelIndex(chars[i]);
+            if (idx != -1) {
+                freq[idx]++;
+                if (first[idx] == -1) {
+                    first[idx] = i;
                 }
             }
         }
 
-        List<Integer> presentVowels = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            if (frequency[i] > 0) {
-                presentVowels.add(i);
-            }
-        }
+        Integer[] order = {0, 1, 2, 3, 4};
 
-        Collections.sort(presentVowels, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer a, Integer b) {
-                if (frequency[a] != frequency[b]) {
-                    return Integer.compare(frequency[b], frequency[a]);
-                }
-                return Integer.compare(firstPosition[a], firstPosition[b]);
+        Arrays.sort(order, (x, y) -> {
+            if (freq[x] != freq[y]) {
+                return freq[y] - freq[x];
             }
+            return first[x] - first[y];
         });
 
-        List<Character> orderedVowels = new ArrayList<>();
-        for (int vowelIndex : presentVowels) {
-            for (int count = 0; count < frequency[vowelIndex]; count++) {
-                orderedVowels.add(getVowelChar(vowelIndex));
-            }
-        }
+        int pos = 0;
 
-        for (int i = 0; i < vowelPositions.size(); i++) {
-            chars[vowelPositions.get(i)] = orderedVowels.get(i);
+        for (int idx : order) {
+            while (freq[idx] > 0) {
+                while (pos < chars.length && vowelIndex(chars[pos]) == -1) {
+                    pos++;
+                }
+
+                chars[pos] = vowels[idx];
+                pos++;
+                freq[idx]--;
+            }
         }
 
         return new String(chars);
     }
 
-    private int getVowelIndex(char ch) {
-        if (ch == 'a') {
+    private int vowelIndex(char c) {
+        if (c == 'a') {
             return 0;
         }
-        if (ch == 'e') {
+        if (c == 'e') {
             return 1;
         }
-        if (ch == 'i') {
+        if (c == 'i') {
             return 2;
         }
-        if (ch == 'o') {
+        if (c == 'o') {
             return 3;
         }
-        if (ch == 'u') {
+        if (c == 'u') {
             return 4;
         }
         return -1;
-    }
-
-    private char getVowelChar(int index) {
-        if (index == 0) {
-            return 'a';
-        }
-        if (index == 1) {
-            return 'e';
-        }
-        if (index == 2) {
-            return 'i';
-        }
-        if (index == 3) {
-            return 'o';
-        }
-        return 'u';
     }
 }
