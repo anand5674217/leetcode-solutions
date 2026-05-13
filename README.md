@@ -17,3 +17,6 @@ Each solution includes:
 
 ### Progress
 - Total Problems Solved: XX
+
+### Notes
+- [Spring configuration and path normalization](interview-notes/spring-config-and-path-normalization.md)
