@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeetCode 75 - 605 Can Place Flowers" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="605-can-place-flowers" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode-75/605-can-place-flowers" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

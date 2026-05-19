@@ -25,5 +25,6 @@
         <module>leetcode-75/1768-merge-strings-alternately</module>
         <module>leetcode-75/1071-greatest-common-divisor-of-strings</module>
         <module>leetcode-75/1431-kids-with-the-greatest-number-of-candies</module>
+        <module>leetcode-75/605-can-place-flowers</module>
     </modules>
 </project>
