@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Daily Question - 2540 Minimum Common Value" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="2540-minimum-common-value" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/daily-question/2540-minimum-common-value" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

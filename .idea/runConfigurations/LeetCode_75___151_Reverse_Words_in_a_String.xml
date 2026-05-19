@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeetCode 75 - 151 Reverse Words in a String" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="151-reverse-words-in-a-string" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode-75/151-reverse-words-in-a-string" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

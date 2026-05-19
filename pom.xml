@@ -26,5 +26,8 @@
         <module>leetcode-75/1071-greatest-common-divisor-of-strings</module>
         <module>leetcode-75/1431-kids-with-the-greatest-number-of-candies</module>
         <module>leetcode-75/605-can-place-flowers</module>
+        <module>leetcode-75/345-reverse-vowels-of-a-string</module>
+        <module>leetcode-75/151-reverse-words-in-a-string</module>
+        <module>daily-question/2540-minimum-common-value</module>
     </modules>
 </project>
