@@ -32,6 +32,7 @@
         <module>leetcode-75/1732-find-the-highest-altitude</module>
         <module>leetcode-75/724-find-pivot-index</module>
         <module>leetcode-75/1207-unique-number-of-occurrences</module>
+        <module>leetcode-75/933-number-of-recent-calls</module>
         <module>daily-question/2540-minimum-common-value</module>
         <module>RestAPI</module>
     </modules>

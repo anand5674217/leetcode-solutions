@@ -1,0 +1,37 @@
+# 933. Number of Recent Calls
+
+## Problem
+You have a `RecentCounter` class which counts the number of recent requests within a certain time frame.
+
+Implement the `RecentCounter` class:
+- `RecentCounter()` Initializes the counter with zero recent requests.
+- `int ping(int t)` Adds a new request at time `t`, where `t` represents some time in milliseconds, and returns the number of requests that has happened in the past 3000 milliseconds (including the new request). Specifically, return the number of requests that have happened in the inclusive range `[t - 3000, t]`.
+
+It is guaranteed that every call to `ping` uses a strictly larger value of `t` than the previous call.
+
+### Example 1:
+- **Input**: `["RecentCounter", "ping", "ping", "ping", "ping"]`, `[[], [1], [100], [3001], [3002]]`
+- **Output**: `[null, 1, 2, 3, 3]`
+- **Explanation**:
+  - `RecentCounter recentCounter = new RecentCounter();`
+  - `recentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1`
+  - `recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2`
+  - `recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3`
+  - `recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3`
+
+## Constraints:
+- `1 <= t <= 10^9`
+- Each test case will call `ping` with strictly increasing values of `t`.
+- At most `10^4` calls will be made to `ping`.
+
+## Approach
+1. Use an array (or a `Queue`) to store the timestamps of the requests.
+2. Since timestamps are strictly increasing, we can maintain two pointers (`start` and `end`) to simulate a sliding window (queue).
+3. For each `ping(t)`:
+   - Add `t` to the end of the array.
+   - Increment `start` until `aq[start]` is within the range `[t - 3000, t]`.
+   - The number of recent calls is the difference between `end` and `start`.
+
+## Complexity
+- **Time Complexity**: `O(1)` amortized per `ping`. Each timestamp is added once and removed (skipped) at most once.
+- **Space Complexity**: `O(W)` where `W` is the number of requests in the sliding window (maximum 3000ms). The array is pre-allocated to `10^4` as per constraints.
