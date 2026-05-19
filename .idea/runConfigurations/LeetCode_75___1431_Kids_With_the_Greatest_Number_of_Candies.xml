@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeetCode 75 - 1431 Kids With the Greatest Number of Candies" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="1431-kids-with-the-greatest-number-of-candies" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode-75/1431-kids-with-the-greatest-number-of-candies" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

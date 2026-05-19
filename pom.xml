@@ -22,5 +22,8 @@
         <module>greedy/meeting-rooms</module>
         <module>matrix/1886-determine-whether-matrix-can-be-obtained-by-rotation</module>
         <module>linked-list</module>
+        <module>leetcode-75/1768-merge-strings-alternately</module>
+        <module>leetcode-75/1071-greatest-common-divisor-of-strings</module>
+        <module>leetcode-75/1431-kids-with-the-greatest-number-of-candies</module>
     </modules>
 </project>
