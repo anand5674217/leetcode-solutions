@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeetCode 75 - 643 Maximum Average Subarray I" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="643-maximum-average-subarray-i" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode-75/643-maximum-average-subarray-i" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

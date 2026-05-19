@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeetCode 75 - 724 Find Pivot Index" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="724-find-pivot-index" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode-75/724-find-pivot-index" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+

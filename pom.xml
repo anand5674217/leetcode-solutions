@@ -28,6 +28,10 @@
         <module>leetcode-75/605-can-place-flowers</module>
         <module>leetcode-75/345-reverse-vowels-of-a-string</module>
         <module>leetcode-75/151-reverse-words-in-a-string</module>
+        <module>leetcode-75/283-move-zeroes</module>
+        <module>leetcode-75/643-maximum-average-subarray-i</module>
+        <module>leetcode-75/1732-find-the-highest-altitude</module>
+        <module>leetcode-75/724-find-pivot-index</module>
         <module>daily-question/2540-minimum-common-value</module>
         <module>RestAPI</module>
     </modules>
