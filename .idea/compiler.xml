@@ -6,14 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="linked-list-experiments" />
+        <module name="605-can-place-flowers" />
         <module name="determine-whether-matrix-can-be-obtained-by-rotation" />
         <module name="maximum-non-negative-product-in-a-matrix" />
-        <module name="arrays" />
+        <module name="724-find-pivot-index" />
+        <module name="2540-minimum-common-value" />
+        <module name="151-reverse-words-in-a-string" />
+        <module name="283-move-zeroes" />
         <module name="binary-search" />
+        <module name="345-reverse-vowels-of-a-string" />
+        <module name="weekly-contest-494-q1" />
+        <module name="rest-api" />
+        <module name="linked-list-experiments" />
+        <module name="643-maximum-average-subarray-i" />
+        <module name="1768-merge-strings-alternately" />
+        <module name="1431-kids-with-the-greatest-number-of-candies" />
+        <module name="1732-find-the-highest-altitude" />
+        <module name="arrays" />
         <module name="meeting-rooms" />
         <module name="55-jump-game" />
-        <module name="weekly-contest-494-q1" />
+        <module name="1071-greatest-common-divisor-of-strings" />
       </profile>
     </annotationProcessing>
   </component>

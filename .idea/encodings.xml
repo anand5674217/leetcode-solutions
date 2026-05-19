@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/RestAPI/src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RestAPI/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RestAPI/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/arrays" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/arrays/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/binary-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/binary-search/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/contest/weekly-contest-494/q1-construct-uniform-parity-array-i" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/contest/weekly-contest-494/q1-construct-uniform-parity-array-i/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/daily-question/2540-minimum-common-value" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/daily-question/2540-minimum-common-value/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dynamic-programming/1594-maximum-non-negative-product-in-a-matrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dynamic-programming/1594-maximum-non-negative-product-in-a-matrix/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/greedy/55-jump-game" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/greedy/55-jump-game/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/greedy/meeting-rooms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/greedy/meeting-rooms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1071-greatest-common-divisor-of-strings" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1071-greatest-common-divisor-of-strings/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1431-kids-with-the-greatest-number-of-candies" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1431-kids-with-the-greatest-number-of-candies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/151-reverse-words-in-a-string" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/151-reverse-words-in-a-string/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1732-find-the-highest-altitude" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1732-find-the-highest-altitude/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1768-merge-strings-alternately" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/1768-merge-strings-alternately/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/283-move-zeroes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/283-move-zeroes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/345-reverse-vowels-of-a-string" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/345-reverse-vowels-of-a-string/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/605-can-place-flowers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/605-can-place-flowers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/643-maximum-average-subarray-i" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/643-maximum-average-subarray-i/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/724-find-pivot-index" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leetcode-75/724-find-pivot-index/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/linked-list" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/linked-list/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/matrix/1886-determine-whether-matrix-can-be-obtained-by-rotation" charset="UTF-8" />
