@@ -34,6 +34,10 @@
         <module>leetcode-75/724-find-pivot-index</module>
         <module>leetcode-75/1207-unique-number-of-occurrences</module>
         <module>leetcode-75/933-number-of-recent-calls</module>
+        <module>leetcode-75/443-string-compression</module>
+        <module>leetcode-75/2095-delete-the-middle-node-of-a-linked-list</module>
+        <module>leetcode-75/739-daily-temperatures</module>
+        <module>leetcode-75/328-odd-even-linked-list</module>
         <module>daily-question/2540-minimum-common-value</module>
         <module>RestAPI</module>
     </modules>
